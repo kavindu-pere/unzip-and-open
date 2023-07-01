@@ -8,7 +8,7 @@ param(
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 # Remove the ".zip" extension from the input file name
-$projectFolderName = $zipPath -replace '\.zip$'
+$projectFolderName = $ZipFile -replace '\.zip$'
 
 # Get the absolute path of the .zip file
 $zipPath = Convert-Path $ZipFile
